@@ -6,7 +6,7 @@ include("bandeau_gene.php");
 include("connexion.php");
 // Ouverture du fichier
 $nomfichier = $_GET['concours'];
-$fichier = file("../../../CNEAC/".$nomfichier);
+$fichier = file("../CNEAC/".$nomfichier);
 include("restauration_fichier_0.php");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

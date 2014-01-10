@@ -14,7 +14,7 @@ $_SESSION['SousVersion'] = substr($versioncomplete, 3, 5);
 include("communs/ecrit_variables_genes.php");
 $_SESSION['Finale'] = "N";
 $_SESSION['Local'] = "Y";
-if (!$dossier = @dir("../../CNEAC")){mkdir("../../CNEAC");} // Création du dossier CNEAC s'il n'existe pas
+if (!$dossier = @dir("CNEAC")){mkdir("CNEAC");} // Création du dossier CNEAC s'il n'existe pas
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>PROGESCO</title>
 <link href="communs/styles.css" rel="stylesheet" type="text/css">

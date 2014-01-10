@@ -30,7 +30,7 @@ if (isset($_GET['import'])){
 	while ($row = mysql_fetch_row($result)){
 		$nomchamps[] = $row[0];
 	}
-	$nomfichier = "../../../CNEAC/".$_GET['import'];
+	$nomfichier = "../CNEAC/".$_GET['import'];
 	$fichier = file($nomfichier);
 	$nblignes = count($fichier);
 	$n = 0;
@@ -135,7 +135,7 @@ if (isset($_GET['import'])){
 	<thead><tr><td>Code Club</td><td>Club</td></thead>
 	<tbody>
 <?php
-$dir = dir("../../../CNEAC/");
+$dir = dir("../CNEAC/");
 while (($fichier = $dir->read()) !== false){
 	if (substr($fichier, 4, strlen($fichier) - 4) == $type.".cneac"){
 		$codeclub = substr($fichier, 0, 3);

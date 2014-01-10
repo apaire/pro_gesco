@@ -22,7 +22,7 @@ include("connexion.php");
 
 // Chemin du fichier
 $nomfichier = $_GET['concours'];
-$fichier = "../../../CNEAC/".$nomfichier;
+$fichier = "../CNEAC/".$nomfichier;
 
 // Importer le fichier SQL dans la base
 function importerSQL($fichier)

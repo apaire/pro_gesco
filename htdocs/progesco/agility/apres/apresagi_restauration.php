@@ -18,7 +18,7 @@ include("../utilitaires/bandeau_agi.php");
 include("../utilitaires/nomvars_agi.php");
 include("../../communs/connexion.php");
 //Ouverture dossier
-$dir = dir("../../../../CNEAC/");
+$dir = dir("../../CNEAC/");
 ?>
 <table class="general" align="center">
 <?php

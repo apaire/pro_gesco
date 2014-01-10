@@ -42,7 +42,7 @@ while ($row = mysql_fetch_assoc($result)){
 include("../communs/lect_variables_genes.php");
 $codeclub = $_SESSION['CodeClub'];
 $nomfichier = "xampplite/CNEAC/".$codeclub."_".$type.".cneac";
-$fichier = "../../../CNEAC/".$codeclub."_".$type.".cneac";
+$fichier = "../CNEAC/".$codeclub."_".$type.".cneac";
 $fp = fopen($fichier, "w");
 fputs($fp, $texte);
 fclose($fp);

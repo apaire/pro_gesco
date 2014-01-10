@@ -16,7 +16,7 @@ include("../../communs/connexion.php");
 <?php
 $date = $_SESSION['Annee'].$_SESSION['Mois'].$_SESSION['Jour'];
 $fichier = "agility_".$_SESSION['CodeClub']."_".$date."_".date("MdHi");
-$sauvegarde .= "../../../../CNEAC/".$fichier.".cneac";
+$sauvegarde .= "../../CNEAC/".$fichier.".cneac";
 $fp = fopen($sauvegarde, "w");
 $crlf = ";".chr(13).chr(10);
 
@@ -78,7 +78,7 @@ $codecluborg = $_SESSION['CodeClub'];
 $cluborg = $_SESSION['Club'];
 $regionaleorg = substr($codecluborg, 0, 1);
 $disques = explode("/",$_SERVER['DOCUMENT_ROOT']);
-$sauvegarde = "../../../../CNEAC/";
+$sauvegarde = "../../CNEAC/";
 echo "<table class='general' width='80%' align='center' border='1' rules='group'>";
 
 // Fichier AGIDKTCO
@@ -333,15 +333,15 @@ $car_origine = array(" ", ".", "/", "'");
 $car_remplacement = array("_", "_", "_", "_");
 $ville = str_replace($car_origine, $car_remplacement, $clubs[0]);
 $fichierzip = "agility_".$ville."_".$date.".zip";
-$fichiersauvegardecomplet = "../../../../CNEAC/".$fichier.".cneac";
-$fichierzipcomplet = "../../../../CNEAC/".$fichierzip;
+$fichiersauvegardecomplet = "../../CNEAC/".$fichier.".cneac";
+$fichierzipcomplet = "../../CNEAC/".$fichierzip;
 if (file_exists($fichierzipcomplet)){unlink($fichierzipcomplet);}
 $zip = new ZipArchive();
 $zip->open($fichierzipcomplet, ZipArchive::CREATE);
-$zip->addFile("../../../../CNEAC/AGIDKTCO.TXT", "AGIDKTCO.TXT");
-$zip->addFile("../../../../CNEAC/AGIDKTEP.TXT", "AGIDKTEP.TXT");
-$zip->addFile("../../../../CNEAC/AGIDKTRE.TXT", "AGIDKTRE.TXT");
-$zip->addFile("../../../../CNEAC/AGIDKTST.TXT", "AGIDKTST.TXT");
+$zip->addFile("../../CNEAC/AGIDKTCO.TXT", "AGIDKTCO.TXT");
+$zip->addFile("../../CNEAC/AGIDKTEP.TXT", "AGIDKTEP.TXT");
+$zip->addFile("../../CNEAC/AGIDKTRE.TXT", "AGIDKTRE.TXT");
+$zip->addFile("../../CNEAC/AGIDKTST.TXT", "AGIDKTST.TXT");
 $zip->addFile($fichiersauvegardecomplet, basename($fichiersauvegardecomplet));
 $zip->addFile($fichierSQL, basename($fichierSQL));
 $_SESSION['Fichierzip'] = $fichierzip;
