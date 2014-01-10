@@ -1,0 +1,84 @@
+<html>
+<header>
+<script language="javascript">
+<!-- Not used anymore
+function disableButton()
+{
+document.getElementById('submit_button').disabled = true;
+}
+function enableButton()
+{
+document.getElementById('submit_button').disabled = false;
+}
+function resetForm()
+{
+document.getElementById('form').setAttribute('submitted','false');
+}
+-->
+function checkNormal()
+{
+document.getElementById('radio_normal').disabled = true;
+document.getElementById('radio_plus').disabled = true;
+document.getElementById('radio_plus').checked = false;
+document.getElementById('radio_normal').checked = true;
+}
+function checkPlus()
+{
+document.getElementById('radio_normal').disabled = true;
+document.getElementById('radio_plus').disabled = true;
+document.getElementById('radio_normal').checked = false;
+document.getElementById('radio_plus').checked = true;
+}
+function enableEpreuve2()
+{
+document.getElementById('radio_normal').disabled = false;
+document.getElementById('radio_plus').disabled = false;
+}
+</script>
+</header>
+
+<body style='background-color:#8DBAD3; color:#214254'>
+<div style='text-align:center;'><h2>Pr&eacute;inscription au concours de TVA</h2></div>
+<form id='form' enctype="multipart/form-data" action="inscript.php" method="post" onsubmit="if (this.getAttribute('submitted')) return false; this.setAttribute('submitted','true');">
+<table align='center'>
+<tr>
+<td>Num&eacute;ro Licence</td>
+<td><input type='text' name='licence' id='licence' size='45'/></td>
+</tr>
+<tr>
+<td>Nom du chien</td>
+<td><input type='text' name='nom_chien' size='45'/></td>
+</tr>
+<tr>
+<td>Nom du conducteur</td>
+<td><input type='text' name='nom_conducteur' size='45'/></td>
+</tr>
+<tr>
+<td>Votre code postal</td>
+<td><input type='text' name='code_postal' size='6'/></td>
+</tr>
+<tr>
+<td valign='top'>&Eacute;preuves</td>
+<td>
+<table>
+<tr>
+<td><input type="radio" value="1" name="epreuve1" onclick='checkNormal()' />1<sup>er</sup> degr&eacute;<br/>
+    <input type="radio" value="2" name="epreuve1" onclick='enableEpreuve2()' />2<sup>er</sup> degr&eacute;<br/>
+    <input type="radio" value="3" name="epreuve1" onclick='checkPlus()' />3<sup>er</sup> degr&eacute;</td>
+<td width='30'></td>
+<td><input type="radio" value="normal" name="epreuve2" id="radio_normal" disabled />Open / Jumping<br/>
+    <input type="radio" value="plus" name="epreuve2" id="radio_plus" disabled />Open + / Jumping +</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan='2' align='right'><input value='Pre-inscription' type='submit' name='submit_button' id='submit_button'/></td>
+</tr>
+<tr>
+<td colspan='2' align='right'><input value='R&eacute;armer le bouton!' type='button' name='reset_button' id='reset_button' onclick='window.location.reload()'/></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
