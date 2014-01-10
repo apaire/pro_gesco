@@ -21,6 +21,17 @@ if (isset($_POST['supprimer'])){
 	exit;
 }
 
+// Ajout Arnaud: possiblité de passer des paramètres de SESSION par des paramètres POST
+if (isset($_POST['IdLicence'])){
+    $idlicence = $_POST['IdLicence'];
+}
+if (isset($_POST['Licence'])){
+    $licence = $_POST['Licence'];
+}
+if (isset($_POST['RetourConcurrents1'])){
+    $retour = $_POST['RetourConcurrents1'];
+}
+
 // Modifier licence
 if (isset($_POST['modiflicence'])){
 	include("../../boiteaoutils/maj_licencesmodif.php");
