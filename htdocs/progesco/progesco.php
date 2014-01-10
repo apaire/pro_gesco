@@ -2,7 +2,7 @@
 session_start();
 session_unset();
 include("communs/connexion.php"); // Connexion base de données locale
-if (mysql_num_rows(mysql_query("SHOW DATABASES LIKE 'cneac'")) == 0){
+if (mysql_num_rows(mysql_query("SHOW DATABASES LIKE '$bdd'")) == 0){
 	// Création de la base de données
 	include("communs/creation_db.php");
 }

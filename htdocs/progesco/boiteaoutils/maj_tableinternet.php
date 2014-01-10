@@ -26,7 +26,7 @@ if ($table == "cneac_licences"){
 	mysql_query($query);
 }
 // Création nouvelle table
-$table ="cneac_licences";
+//$table ="cneac_licences";
 include("maj_internet_1.php");
 	// Récupération des adresses des licences
 //	$query = "SELECT * FROM cneac_licences_old WHERE Adresse1<>''";
