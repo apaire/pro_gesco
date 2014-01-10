@@ -1,0 +1,272 @@
+@charset "utf-8";
+body {
+	font-family:"Nexa Lite",Arial, Helvetica, sans-serif;
+	background-color: #0E3070;
+	background-image: url(../images/fond_degrade.jpg);
+	color: #CCC;
+	background-repeat: no-repeat;
+}
+h4	{
+	margin: 10px;
+}
+form {
+	margin: 0px;
+}
+.topcenter {
+	position:relative;
+	top:50px;
+	text-align:center;
+	width:100%;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+.justify {
+	text-align: justify;
+}
+.clair {
+	background-color: #086BAF;
+}
+.fonce {
+	background-color: #0E3070;
+}
+p {
+	text-align: justify;
+}
+.indent {
+	text-indent: 3em;
+}
+.negindent {
+	text-indent: -3em;
+	margin-left: 3em;
+}
+.retrait {
+	margin-left: 40px;
+}
+.navigation {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width:100%;
+}
+.page {
+	position:absolute;
+	left:0px;
+	top:25px;
+	width:100%;
+}
+.fond {
+	background-color: #DD9955;
+}
+
+div.bandeau {
+	position:fixed;
+	top:10px;
+	width:100%;
+	height:30px;
+}
+div.bouton {
+	position: relative;
+	background-color: #999;
+	color: #000000;
+	border: solid 1px black;
+	text-align: center;
+	margin: 0px;
+	width: 230px;
+}
+div.bouton a:link, div.bouton a:visited {
+	display: block;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+div.bouton a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+	background-color: #96CA2D;
+}
+
+div.boutonchoix {
+	position: relative;
+	color: #000000;
+	width: 400px;
+	text-align: left;
+}
+div.boutonchoixwww {
+	position: relative;
+	background-color: #FF0000;
+	color: #000000;
+	border: solid 1px white;
+	text-align: center;
+	width: 400px;
+}
+div.boutonchoix a:link, div.boutonchoix a:visited {
+	display: block;
+	text-decoration: none;
+	color: #FFFFFF;
+	border-top-width: 3px;
+	border-left-width: 25px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+	padding-left: 10px;
+}
+div.boutonchoix a:hover {
+	text-decoration: none;
+	color: #96CA2D;
+	border-top-color: #96CA2D;
+	border-right-color: #96CA2D;
+	border-bottom-color: #96CA2D;
+	border-left-color: #96CA2D;
+}
+
+div.boutonchoixetroit {
+	position: relative;
+	color: #000000;
+	border: solid 1px white;
+	text-align: center;
+	width: 200px;
+}
+div.boutonchoixetroit a:link, div.boutonchoixetroit a:visited {
+	display: block;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+div.boutonchoixetroit a:hover {
+	text-decoration: none;
+	background-color: #96CA2D;
+}
+
+div.boutonimp {
+	position: relative;
+	width: 400px;
+	text-align: left;
+}
+div.boutonimp a:link, div.boutonimp a:visited {
+	display: block;
+	text-decoration: none;
+	color: #FFFFFF;
+	border-top-width: 3px;
+	border-left-width: 25px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+	padding-left: 10px;
+}
+div.boutonimp a:hover {
+	text-decoration: none;
+	color: #0e3070;
+	border-color: #0e3070;
+}
+
+div.boutonimpetroit {
+	position: relative;
+	background-color: #009900;
+	color: #000000;
+	border: solid 1px white;
+	text-align: center;
+	width: 150px;
+}
+div.boutonimpetroit a:link, div.boutonimpetroit a:visited {
+	display:block;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+div.boutonimpetroit a:hover {
+	text-decoration: none;
+	color: #FFCC00;
+	background-color: #00FF00;
+}
+
+span.amber		{ font-weight: bold; color: #FFA600 }
+span.black		{ font-family: Arial black; font-size: 1.5em }
+span.blue		{ font-weight: bold; color: blue }
+span.cyan		{ font-weight: bold; color: #0093DD }
+span.green		{ font-weight: bold; color: green;}
+span.magenta	{ font-weight: bold; color: #DD137B }
+span.maroon		{ font-weight: bold; color: maroon }
+span.navy		{ font-weight: bold; color: navy }
+span.orange		{ font-weight: bold; color: orange }
+span.red		{ font-weight: bold; color: red }
+span.white		{ font-weight: bold; background: black; color: white }
+span.yellow		{ font-weight: bold; background: black; color: yellow }
+
+span.alert		{
+	font-weight: bold;
+	color:#96CA2D;
+}
+span.alarm		{
+	font-weight: bold;
+	color:#F00;
+}
+span.big		{ font-weight: bold; font-size: 1.5em }
+span.cursive	{ font-weight: bold; font-size: 1.5em; font-family: BrushScript BT }
+span.encadre	{ border: solid red 1px; padding: 3px 7px }
+span.fleche		{ font-family: Wingdings }
+span.lien		{ font-weight: bold	}
+
+table.general		{
+	cellspacing: 10px;
+	font-size: normal;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+table.middle		{ vertical-align: middle }
+table.leftop		{ text-align: left; vertical-align: top }
+table.small		{ font-size: smaller; text-align: center }
+table.question		{ font-weight: bold; font-style: italic }
+table.retenir		{ background: #C0FFC0; border-width: 3px; border-color: blue; cellspacing: 10px;
+			  font-size: normal }
+tr.center		{ text-align: center }
+tr.centermiddle		{ text-align: center; vertical-align: middle }
+th			{
+	padding: 2px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+th.left			{ text-align: left; vertical-align: top }
+th.top			{ vertical-align: top }
+th.small {font-size: small;	}
+td			{
+	vertical-align: top;
+	margin:10px;
+	padding:3px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+td.center		{ text-align: center }
+td.middle		{ vertical-align: middle }
+a:hover {
+	text-decoration: none;
+	color: #96CA2D;
+}
+a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+h1 {
+	color: #FFF;
+}
+h3 {
+	color: #FFF;
+}
+input:hover {
+	background-color: #96CA2D;
+}

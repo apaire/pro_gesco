@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS `agility_resultats` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `Licence` int(11) NOT NULL,
+  `IdLicence` int(11) NOT NULL,
+  `Dossard` smallint(5) unsigned NOT NULL,
+  `IdEpreuve` int(11) NOT NULL,
+  `Epreuve` smallint(5) unsigned NOT NULL,
+  `Categorie` char(1) COLLATE utf8_unicode_ci NOT NULL,
+  `Classe` char(1) COLLATE utf8_unicode_ci NOT NULL,
+  `Handi` char(1) COLLATE utf8_unicode_ci NOT NULL,
+  `OrdrePassage` smallint(5) unsigned NOT NULL,
+  `Temps` decimal(10,2) NOT NULL,
+  `Fautes` tinyint(3) unsigned NOT NULL,
+  `Refus` tinyint(3) unsigned NOT NULL,
+  `Penalites` tinyint(3) unsigned NOT NULL,
+  `Depastemps` decimal(10,2) NOT NULL,
+  `PenalitesAnt` decimal(10,2) NOT NULL,
+  `Total` decimal(10,2) NOT NULL,
+  `Classement` smallint(5) unsigned NOT NULL,
+  `Resultat` char(1) COLLATE utf8_unicode_ci NOT NULL,
+  `Brevet` char(1) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`Id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
